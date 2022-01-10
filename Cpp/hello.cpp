@@ -1,6 +1,25 @@
-#include <iostream>
+#include <iostream> //전처리 지시자
+/*
+c++에서 함수를 사용하고자 한다면, 반드시 그 함수의 원형을 미리 정의하여야 합니다.
+단편적으로 아래의 코드 중 cout은 우리가 원형을 미리 정의하지 않았다고 생각할 수 있다.
+하지만, 전처리 지시자(즉, iostream)에 이미 원형이 정의되어 있음.
+전처리 지시자에는 우리가 쓰는 다양한 함수들의 원형이 이미 저장되어 있음.
+*/
+
+using namespace std;
+// 위 문장을 사용하지 않는다면, std::cout / std::endl 과 같은 형태로 작성해야 함.
+// ==> 그 이유는, cout 과 endl 은 iostream(전처리 지시자)에 정의되어 있는 함수.
+//     iostream 내용을 확인해보면 std_begin ~ std_end 사이에 cout 등의 함수들이 정의되어 있음을 확인할 수 있다.
+//     그래서 iostream에 함수의 원형이 정의되어 있는 경우, std:: 로 표기를 해줘야하는데, 이게 번거로우므로 위와 같은 문장을 작성하는 것
+// ; = 종결자(마침표)
 
 int main() {
+    //C++ 코드에는 반드시 main이라는 함수가 존재해야 함.
+    //==> main의 이름을 가지고 있는 함수가 있어야 한다.
 
-    std::cout << "Hello World!\n";
+    cout << "Hello World!" << endl;
+    // cout : cout 이후의 내용을 console 창에 출력하는 역할
+    // << : 데이터의 흐름. 즉, 데이터의 방향을 나타냄
+    // endl : 줄바꿈. endl이 아닌 \n을 사용해도 무관.
+    return 0;
 }
