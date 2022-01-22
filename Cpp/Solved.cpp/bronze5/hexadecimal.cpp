@@ -23,4 +23,7 @@ int main(){
     }
     cout << result << endl;
     return 0;
+    //이후 stoi를 이용하여 쉽게 풀어보기
+    //https://godog.tistory.com/entry/C-string-to-int-int-to-string-%ED%98%95%EB%B3%80%ED%99%98-%ED%95%98%EA%B8%B0#:~:text=C%2B%2B%20string%20to%20int%2C%20int%20to%20string%20%ED%98%95%EB%B3%80%ED%99%98,%EC%A4%80%EB%8B%A4.%20%28stoi%20-%3E%20string%20to%20integer%EB%A5%BC%20%EC%A4%84%EC%9D%B8%20%EA%B2%83%EC%9D%B4%EB%8B%A4.
+    //위 링크는 참조
 }
